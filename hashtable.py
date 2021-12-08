@@ -18,7 +18,7 @@ for i in range(len(hashmap)):
         print ("True")
 
     else:
-         print("false")
+         print("False")
 
 print("------------------------------\n")
 
