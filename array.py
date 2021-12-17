@@ -60,3 +60,14 @@ class Solution:
             if nums[i] != 1:
                 total = 0 
         return fulltotal 
+
+
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        
+        str_num = map(str, nums)
+        count = 0
+        for s in str_num:
+            if len(s) % 2 == 0:
+                count += 1
+        return count  
