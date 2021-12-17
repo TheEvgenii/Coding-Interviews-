@@ -35,3 +35,14 @@ class Solution:
                 ans = ans - 1
         return ans
         
+
+        class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        ans = []
+        d = 0
+        for i in range(0,n):
+            ans.append(nums[i])
+        for b in range(n, len(nums)):
+            ans.insert(d+1,nums[b])
+            d = d+2
+        return ans
