@@ -46,3 +46,17 @@ class Solution:
             ans.insert(d+1,nums[b])
             d = d+2
         return ans
+
+
+        class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        total = 0
+        fulltotal = 0
+        for i in range(len(nums)):
+            if nums[i] == 1:
+                total = total + 1
+            if total > fulltotal:
+                    fulltotal = total
+            if nums[i] != 1:
+                total = 0 
+        return fulltotal 
