@@ -71,3 +71,13 @@ class Solution:
             if len(s) % 2 == 0:
                 count += 1
         return count  
+
+
+        class Solution:
+        def sortedSquares(self, nums: List[int]) -> List[int]:
+        new_array = []
+        last_array = []
+        for i in range (len(nums)):
+            new_array.append(nums[i] * nums[i])
+               
+        return sorted(new_array)
