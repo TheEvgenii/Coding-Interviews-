@@ -15,5 +15,5 @@ def removeElement(nums, val):
                 
         
         
-#qdddf
+#qdddff
 removeElement([3,2,2,3], 3)
